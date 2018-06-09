@@ -33,6 +33,7 @@ namespace AndyBot
             }
             else
             {
+                await context.PostAsync($"Testing continuous deployment");
                 await context.PostAsync($"{this.count++}: You said {message.Text}");
                 context.Wait(MessageReceivedAsync);
             }
